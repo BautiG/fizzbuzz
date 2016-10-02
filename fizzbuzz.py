@@ -52,25 +52,23 @@ number=0
 number2=0
 
 while total>number:
-    if listtotal[number]%fizzn==0:
-        listtotal[number]="Fizz"
+    if listtotal[number]%fizzn==0 and listtotal[number]%buzzn==0:
+        listtotal[number]="FizzBuzz"
         number=number+1
-    else:
+    elif:
         if listtotal[number]%buzzn==0:
             listtotal[number]="Buzz"
             number=number+1
-    else:
-        if listtotal[number]%fizzn==0:
-        listtotal[number]="Fizz"
-        number=number+1
     elif:
+        if listtotal[number]%fizzn==0:
+            listtotal[number]="Fizz"
+            number=number+1
+    else:
         number=number+1
 
 for x in listtotal:
     print (x)
 """
-listtotal = [x for x in listtotal if x != 0]
-
 while total>number2:
     if listtotal[number2]%buzzn==0:
         listtotal[number2]="Buzz"
