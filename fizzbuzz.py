@@ -45,10 +45,38 @@ Fizz
 Buzz
 """
 total=int(input("How many numbers shall we print? "))
-fizz=int(input("For multiples of what number shall we print 'Fizz'? "))
-buzz=int(input("For multiples of what number shall we print 'Buzz'? "))
-listtotal=list(range(total))
+fizzn=int(input("For multiples of what number shall we print 'Fizz'? "))
+buzzn=int(input("For multiples of what number shall we print 'Buzz'? "))
+listtotal=list(range(1,total+1))
 number=0
+number2=0
+
+while total>number:
+    if listtotal[number]%fizzn==0:
+        listtotal[number]="Fizz"
+        number=number+1
+    else:
+        if listtotal[number]%buzzn==0:
+            listtotal[number]="Buzz"
+            number=number+1
+    else:
+        if listtotal[number]%fizzn==0:
+        listtotal[number]="Fizz"
+        number=number+1
+    elif:
+        number=number+1
+
+for x in listtotal:
+    print (x)
+"""
+listtotal = [x for x in listtotal if x != 0]
+
+while total>number2:
+    if listtotal[number2]%buzzn==0:
+        listtotal[number2]="Buzz"
+        number2=number2+1
+    else:
+        number2=number2+1
 
 for x in listtotal:
     while number<total:
@@ -57,7 +85,7 @@ for x in listtotal:
         number=number+1
         number2=number2+1
         print(x+1)
-        """
+
         if fizznumber=0:
             listtotal[number]=fizz
             else listtotal[number]=listtotal[number]
