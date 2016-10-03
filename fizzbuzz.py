@@ -51,17 +51,17 @@ listtotal=list(range(1,total+1))
 number=0
 
 while total>number:
-    if listtotal[number]%fizzn==0 and listtotal[number]%buzzn==0:
+    if listtotal[number]%fizzn==0 and listtotal[number]%buzzn==0: #are fizz and buzz factores of the number
        listtotal[number]="FizzBuzz"
        number=number+1
-    elif listtotal[number]%buzzn == 0:
+    elif listtotal[number]%buzzn == 0: #is buzz a factor of the number? if so, replace with buzz
         listtotal[number]="Buzz"
         number=number+1
-    elif listtotal[number]%fizzn == 0:
+    elif listtotal[number]%fizzn == 0: #is fizz a factor of the number? if so, replace with fizz
         listtotal[number]="Fizz"
         number=number+1
     else:
-        number=number+1
+        number=number+1 #if neither fizz or buzz are factors, go to the next number
 
 for x in listtotal:
     print (x)
