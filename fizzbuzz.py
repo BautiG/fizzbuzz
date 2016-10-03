@@ -54,12 +54,10 @@ while total>number:
     if listtotal[number]%fizzn==0 and listtotal[number]%buzzn==0:
        listtotal[number]="FizzBuzz"
        number=number+1
-    elif:
-        listtotal[number]%buzzn==0
+    elif listtotal[number]%buzzn == 0:
         listtotal[number]="Buzz"
         number=number+1
-    elif:
-        listtotal[number]%fizzn==0
+    elif listtotal[number]%fizzn == 0:
         listtotal[number]="Fizz"
         number=number+1
     else:
